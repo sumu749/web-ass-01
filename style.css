@@ -1,5 +1,5 @@
 :root {
-  --accent: #5b4bff; /* purple button */
+  --accent: #5b4bff;
   --text-dark: rgba(37, 36, 50, 1);
   --muted: rgba(37, 36, 50, 0.08);
   --primary-font: "Raleway", sans-serif;
@@ -9,6 +9,7 @@
 * {
   box-sizing: border-box;
 }
+
 html,
 body {
   height: 100%;
@@ -34,15 +35,13 @@ body {
 }
 
 .nav {
-  /* Frame 27150 */
   width: 1140px;
   height: 151px;
-  /* Auto layout */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 50px 0px 50px 0px;
+  padding: 50px 0;
   margin: 30px auto 0;
   position: relative;
 }
@@ -53,49 +52,39 @@ body {
   font-size: 34px;
   font-weight: 900;
   line-height: 150%;
-  letter-spacing: 0%;
   text-align: left;
   margin-top: 50px;
 }
 
 .signup {
-  /* Frame 27149 */
   width: 132px;
   height: 48px;
-  /* Auto layout */
   border-radius: 10px;
   text-decoration: none;
+  display: flex;
   justify-content: center;
   align-items: center;
-  gap: 16;
-  padding: 12px 36px 12px 36px;
+  gap: 16px;
+  padding: 12px 36px;
   margin-top: 63px;
-}
-
-.nav .signup {
   font-family: var(--primary-font);
   background: var(--accent);
   color: white;
   font-size: 16px;
   font-weight: 600;
   line-height: 150%;
-  letter-spacing: 0%;
   text-align: center;
 }
 
 .hero {
-  /* Cool Dark UI Template for Webflow Agencies! */
-  /* Frame 27151 */
   width: 905px;
   height: 237px;
-  /* Auto layout */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 37;
-  /* margin-left: 260px;
-  margin-right: 260px; */
+  gap: 37px;
+  margin: 0 auto;
 }
 
 .hero-inner {
@@ -103,9 +92,11 @@ body {
   height: 152px;
   font-size: 65px;
   font-weight: 600;
-  /* line-height: 0px; */
   letter-spacing: 0%;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .cta {
@@ -119,6 +110,5 @@ body {
   font-weight: 600;
   font-family: var(--primary-font);
   line-height: 150%;
-  letter-spacing: 0%;
   text-align: center;
 }
