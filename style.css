@@ -1,56 +1,124 @@
-
-
-/* .inter-black {  
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-} */
-
-
-/* .raleway {
-    font-family: "Raleway", sans-serif;
-    font-optical-sizing: auto;
-
-} */
-
-/* nav style  */
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 150px;
+:root {
+  --accent: #5b4bff; /* purple button */
+  --text-dark: rgba(37, 36, 50, 1);
+  --muted: rgba(37, 36, 50, 0.08);
+  --primary-font: "Raleway", sans-serif;
+  --secondary-font: "Inter", sans-serif;
 }
 
-
-
-.nav-title{
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-weight: 900;
-    font-size:34px ;
-    color: #4E47FF;
-    
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
 }
 
-nav ul li{
-    list-style: none;
+body {
+  background-image: url(Assets/Hero-bg.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 158px;
+  padding: 0 0 200px 0;
+  width: 1440px;
+  height: 698px;
+  max-width: 100%;
+  margin: 0 auto;
+  color: var(--text-dark);
 }
 
-/* shared style  */
+.nav {
+  /* Frame 27150 */
+  width: 1140px;
+  height: 151px;
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0px 50px 0px;
+  margin: 30px auto 0;
+  position: relative;
+}
 
+.logo {
+  color: var(--accent);
+  font-family: var(--secondary-font);
+  font-size: 34px;
+  font-weight: 900;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-top: 50px;
+}
 
+.signup {
+  /* Frame 27149 */
+  width: 132px;
+  height: 48px;
+  /* Auto layout */
+  border-radius: 10px;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  gap: 16;
+  padding: 12px 36px 12px 36px;
+  margin-top: 63px;
+}
 
-.btn-primary{
-    background-color: #4E47FF;
-    font-family: "Raleway", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    color: white;
-    font-weight: bold;
-    font-size: 16px;
-    padding: 12px 36px;
-    border-radius: 10px;
-    border: none;
-    cursor: pointer;
+.nav .signup {
+  font-family: var(--primary-font);
+  background: var(--accent);
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.hero {
+  /* Cool Dark UI Template for Webflow Agencies! */
+  /* Frame 27151 */
+  width: 905px;
+  height: 237px;
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 37;
+  /* margin-left: 260px;
+  margin-right: 260px; */
+}
+
+.hero-inner {
+  font-family: var(--primary-font);
+  height: 152px;
+  font-size: 65px;
+  font-weight: 600;
+  /* line-height: 0px; */
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.cta {
+  display: inline-block;
+  background: var(--accent);
+  color: white;
+  font-size: 16px;
+  padding: 12px 36px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  font-family: var(--primary-font);
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: center;
 }
