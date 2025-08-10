@@ -666,3 +666,17 @@ main {
 .footer-link:hover {
   color: var(--accent);
 }
+
+/* Hover effect or animation on the all the buttons. */
+.signup:hover,
+.cta:hover,
+.launch:hover,
+.focus-btn-row:hover,
+.focus-btn:hover,
+.contact-submit-row:hover,
+.contact-submit:hover {
+  background: #4e47ff;
+  color: #fff;
+  box-shadow: 0 6px 24px rgba(78, 71, 255, 0.15);
+  transform: translateY(-3px) scale(1.03);
+}
