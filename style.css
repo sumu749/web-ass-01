@@ -211,13 +211,13 @@ main {
   width: 856px;
   height: 45px;
   color: rgba(37, 36, 50, 1);
-  font-family: "Raleway", sans-serif;
+  font-family: var(--primary-font);
   font-size: 38px;
   font-weight: 600;
-  line-height: 45px; /* Use the height for line-height for vertical centering */
+  line-height: 45px;
   letter-spacing: 0;
   text-align: center;
-  margin: 0 auto 0 auto; /* Center horizontally if needed */
+  margin: 0 auto 0 auto;
 }
 
 .stats-row {
@@ -242,11 +242,11 @@ main {
 .stat-value {
   width: 162px;
   height: 97px;
-  color: rgba(78, 71, 255, 1); /* Primary Color */
-  font-family: "Inter", sans-serif;
+  color: var(--accent);
+  font-family: var(--secondary-font);
   font-size: 80px;
   font-weight: 600;
-  line-height: 97px; /* Match height for vertical alignment */
+  line-height: 97px;
   letter-spacing: 0;
   text-align: left;
 }
@@ -255,7 +255,7 @@ main {
   width: 120px;
   height: 24px;
   color: rgba(0, 0, 0, 0.5);
-  font-family: "Inter", sans-serif;
+  font-family: var(--secondary-font);
   font-size: 20px;
   font-weight: 400;
   line-height: 24px;
@@ -280,7 +280,7 @@ main {
   width: 1140px;
   height: 49px;
   color: rgba(37, 36, 50, 1);
-  font-family: "Raleway", sans-serif;
+  font-family: var(--primary-font);
   font-size: 42px;
   font-weight: 600;
   line-height: 49px;
@@ -296,7 +296,7 @@ main {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 24px; /* Optional: space between cards */
+  gap: 24px;
 }
 
 /* Review Card */
@@ -323,7 +323,7 @@ main {
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
-  font-family: "Raleway", sans-serif;
+  font-family: var(--primary-font);
   font-size: 22px;
   font-weight: 600;
   color: #232336;
@@ -338,7 +338,7 @@ main {
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
-  font-family: "Inter", sans-serif;
+  font-family: var(--secondary-font);
   font-size: 16px;
   font-weight: 400;
   color: #232336;
@@ -375,7 +375,7 @@ main {
   height: 22px;
   display: flex;
   align-items: center;
-  font-family: "Inter", sans-serif;
+  font-family: var(--secondary-font);
   font-size: 16px;
   font-weight: 600;
   color: #232336;
@@ -387,7 +387,7 @@ main {
   height: 22px;
   display: flex;
   align-items: center;
-  font-family: "Inter", sans-serif;
+  font-family: var(--secondary-font);
   font-size: 16px;
   font-weight: 400;
   color: rgba(179, 179, 179, 1);
@@ -419,7 +419,7 @@ main {
   width: 516px;
   height: 60px;
   color: #000;
-  font-family: "Raleway", sans-serif;
+  font-family: var(--primary-font);
   font-size: 50px;
   font-weight: 600;
   line-height: 120%;
@@ -432,7 +432,7 @@ main {
   width: 487px;
   height: 22px;
   color: rgba(0, 0, 0, 0.5);
-  font-family: "Inter", sans-serif;
+  font-family: var(--secondary-font);
   font-size: 16px;
   font-weight: 400;
   line-height: 140%;
@@ -453,7 +453,7 @@ main {
   box-sizing: border-box;
   border-radius: 10px;
   backdrop-filter: blur(4px);
-  background: rgba(78, 71, 255, 1);
+  background: var(--accent);
   margin-bottom: 48px;
 }
 
@@ -461,7 +461,7 @@ main {
   width: 123px;
   height: 24px;
   color: #fff;
-  font-family: "Raleway", sans-serif;
+  font-family: var(--primary-font);
   font-size: 16px;
   font-weight: 500;
   line-height: 150%;
@@ -479,4 +479,116 @@ main {
   border-radius: 48px;
   object-fit: cover;
   display: block;
+}
+
+.contact-section {
+  width: 1140px;
+  height: 632px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 115px;
+  padding: 71px 0;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+/* Left: Heading */
+.contact-heading {
+  width: 528px;
+  height: 232px;
+  color: #000;
+  font-family: var(--primary-font);
+  font-size: 97px;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+/* Right: Form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 497px;
+}
+
+/* Label */
+.contact-label {
+  font-family: var(--secondary-font);
+  font-size: 18px;
+  font-weight: 500;
+  color: #000;
+  line-height: 120%;
+  margin-bottom: 6px;
+}
+
+/* Input Wrapper */
+.input-group {
+  width: 497px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Input Field */
+.contact-input,
+.contact-textarea {
+  width: 497px;
+  padding: 20px 32px;
+  border: 1px solid rgba(214, 221, 237, 1);
+  border-radius: 10px;
+  background: #fff;
+  font-family: var(--secondary-font);
+  font-size: 20px;
+  font-weight: 400;
+  color: #000;
+  line-height: 150%;
+  margin-bottom: 0;
+  box-sizing: border-box;
+}
+
+.contact-input::placeholder,
+.contact-textarea::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* Textarea */
+.contact-textarea {
+  height: 95px;
+  resize: none;
+}
+
+/* Submit Button */
+.contact-submit-row {
+  width: 497px;
+  height: 62px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 19px 101px;
+  border-radius: 10px;
+  background: var(--accent);
+  border: none;
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+.contact-submit {
+  width: 95px;
+  height: 24px;
+  color: #fff;
+  font-family: var(--primary-font);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 150%;
+  text-align: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
 }
