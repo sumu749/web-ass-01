@@ -14,9 +14,10 @@ html,
 body {
   height: 100%;
   margin: 0;
+  background: rgba(245, 248, 255, 1);
 }
 
-body {
+.header {
   background-image: url(Assets/Hero-bg.png);
   background-repeat: no-repeat;
   background-position: center top;
@@ -27,10 +28,11 @@ body {
   align-items: center;
   gap: 158px;
   padding: 0 0 200px 0;
+
   width: 1440px;
   height: 698px;
   max-width: 100%;
-  margin: 0 auto;
+  margin: 0 auto 115px auto;
   color: var(--text-dark);
 }
 
@@ -83,7 +85,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 37px;
+  margin-bottom: 160px;
   margin: 0 auto;
 }
 
@@ -97,6 +99,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 37px;
 }
 
 .cta {
@@ -111,4 +114,369 @@ body {
   font-family: var(--primary-font);
   line-height: 150%;
   text-align: center;
+}
+
+main {
+  width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 115px;
+}
+
+.wc-mini {
+  width: 1140px;
+  height: 328px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: #f5f7fe; /* light background like screenshot */
+  border-radius: 4px;
+  padding: 0 48px;
+  margin: auto 150px;
+  box-sizing: border-box;
+  gap: 220px;
+}
+
+.wc-mini-content {
+  width: 517px;
+  height: 203px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 23px;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #232336;
+  margin: 0;
+}
+
+.content {
+  font-size: 18px;
+  color: #7b7b93;
+  margin: 0;
+}
+
+.launch {
+  display: inline-block;
+  background: #5b4bff;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 8px;
+  box-shadow: 0 2px 8px rgba(91, 75, 255, 0.08);
+}
+
+.wc-mini-img {
+  width: 403px;
+  height: 328px;
+  border-radius: 32px;
+  object-fit: cover;
+}
+
+.stats-section {
+  width: 1140px;
+  height: 306px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 50px 80px;
+  /* margin-bottom: 115px; */
+  border-radius: 24px;
+  background: rgba(78, 71, 255, 0.1);
+}
+
+.stats-inner {
+  width: 856px;
+  height: 206px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 40px;
+}
+
+.stats-title {
+  width: 856px;
+  height: 45px;
+  color: rgba(37, 36, 50, 1);
+  font-family: "Raleway", sans-serif;
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 45px; /* Use the height for line-height for vertical centering */
+  letter-spacing: 0;
+  text-align: center;
+  margin: 0 auto 0 auto; /* Center horizontally if needed */
+}
+
+.stats-row {
+  width: 856px;
+  height: 121px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 158px;
+}
+
+.stat {
+  width: 180px;
+  height: 121px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.stat-value {
+  width: 162px;
+  height: 97px;
+  color: rgba(78, 71, 255, 1); /* Primary Color */
+  font-family: "Inter", sans-serif;
+  font-size: 80px;
+  font-weight: 600;
+  line-height: 97px; /* Match height for vertical alignment */
+  letter-spacing: 0;
+  text-align: left;
+}
+
+.stat-label {
+  width: 120px;
+  height: 24px;
+  color: rgba(0, 0, 0, 0.5);
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+/* Testimonial Section Container */
+.testimonials-section {
+  width: 1140px;
+  height: 342px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 50px;
+  margin: 0 auto;
+}
+
+/* Section Title */
+.testimonials-title {
+  width: 1140px;
+  height: 49px;
+  color: rgba(37, 36, 50, 1);
+  font-family: "Raleway", sans-serif;
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 49px;
+  letter-spacing: 0;
+  text-align: center;
+  margin: 0;
+}
+
+/* Cards Row */
+.testimonials-row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px; /* Optional: space between cards */
+}
+
+/* Review Card */
+.review-card {
+  width: 366.67px;
+  height: 243px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 24px;
+  padding: 24px;
+  box-sizing: border-box;
+  border: 1px solid rgba(242, 237, 237, 1);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* Review Card Heading */
+.review-heading {
+  width: 221px;
+  height: 29px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-family: "Raleway", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: #232336;
+  margin: 0 0 4px 0;
+}
+
+/* Review Card Text */
+.review-text {
+  width: 318.67px;
+  height: 44px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #232336;
+  margin-bottom: 12px;
+}
+
+/* Review Card Footer (Avatar + Info) */
+.review-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  margin-top: auto;
+}
+
+/* Avatar */
+.review-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Reviewer Info */
+.reviewer-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Reviewer Title */
+.reviewer-title {
+  width: 87px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #232336;
+}
+
+/* Reviewer Description */
+.reviewer-desc {
+  width: 87px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(179, 179, 179, 1);
+  line-height: 140%;
+}
+
+/* Star Icon */
+.review-star {
+  width: 20px;
+  height: 20px;
+  margin-right: 2px;
+}
+
+.focus-section {
+  width: 1140px;
+  height: 696.77px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: auto;
+  padding: 71px 150px;
+  border-radius: 14px;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+.focus-title {
+  width: 516px;
+  height: 60px;
+  color: #000;
+  font-family: "Raleway", sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: 0;
+  text-align: left;
+  margin: 0 0 16px 0;
+}
+
+.focus-subtitle {
+  width: 487px;
+  height: 22px;
+  color: rgba(0, 0, 0, 0.5);
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 0;
+  text-align: left;
+  margin: 0 0 32px 0;
+}
+
+.focus-btn-row {
+  width: 195px;
+  height: 48px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 36px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  backdrop-filter: blur(4px);
+  background: rgba(78, 71, 255, 1);
+  margin-bottom: 48px;
+}
+
+.focus-btn {
+  width: 123px;
+  height: 24px;
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0;
+  text-align: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.focus-image {
+  width: 840px;
+  height: 364.77px;
+  border-radius: 48px;
+  object-fit: cover;
+  display: block;
 }
